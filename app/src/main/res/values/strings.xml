@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Thrifty</string>
+    <string name="app_slogan">Your favourite online thrift shop!!</string>
+    <string name="log_in_text">Have an account? Log in</string>
+    <string name="sign_up_text">Join Now</string>
+    <string name="admin_text">Admin ?</string>
+    <string name="log_in_txt">Log In</string>
+    <string name="forgot_password_txt">Forgot Password ?</string>
+    <string name="remember_me_txt">Remember Me</string>
+    <string name="password_hint">Password</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="register_txt">Create Account</string>
+    <string name="slogan_text_hint">Add new product</string>
+</resources>

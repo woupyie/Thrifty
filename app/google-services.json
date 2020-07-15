@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "664709317563",
+    "firebase_url": "https://thrifty-66e93.firebaseio.com",
+    "project_id": "thrifty-66e93",
+    "storage_bucket": "thrifty-66e93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664709317563:android:2c6ae55c678f15251e7a9e",
+        "android_client_info": {
+          "package_name": "com.woupyie.thrifty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664709317563-t3bim4i5ff624igvtj35gaarr7fu5hui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.woupyie.thrifty",
+            "certificate_hash": "686f0838c0583e3724caf4293dce3961949c7e9b"
+          }
+        },
+        {
+          "client_id": "664709317563-jmlpt91pugtmompu402o21v1rmfl7hpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHaBV2NGo5qloj4mGFr1OVDquSvGt-GMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664709317563-jmlpt91pugtmompu402o21v1rmfl7hpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
