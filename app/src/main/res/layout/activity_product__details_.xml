@@ -61,20 +61,23 @@
         app:initialNumber="1"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/product_description_details"
+        android:layout_marginTop="8dp"
         >
-
     </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/add_product_to__cart"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/pd_add_to_cart_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="6dp"
-        android:backgroundTint="@android:color/white"
-        android:src = "@drawable/nav_cart"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_margin="16dp"
-        />
+        android:text="Add to Cart"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:elevation="6dp"
+    />
+
+
 
 </RelativeLayout>
