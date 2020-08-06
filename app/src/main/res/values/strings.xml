@@ -10,7 +10,7 @@
     <string name="password_hint">Password</string>
     <string name="phone_number_hint">Phone Number</string>
     <string name="register_txt">Create Account</string>
-    <string name="slogan_text_hint">Add new product</string>
+    <string name="slogan_text_hint">Add New Product</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

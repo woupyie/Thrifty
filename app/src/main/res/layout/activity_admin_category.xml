@@ -13,11 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="10dp"
         android:text="@string/slogan_text_hint"
         android:textAlignment="center"
         android:textSize="26sp"
         android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
         />
 
     <LinearLayout
@@ -27,7 +28,7 @@
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="12dp"
         android:layout_below="@+id/slogan_category"
         >
 
@@ -67,7 +68,7 @@
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="12dp"
         android:layout_below="@+id/linear1_category_layout"
         >
 
@@ -108,7 +109,7 @@
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="12dp"
         android:layout_below="@+id/linear2_category_layout"
         >
 
@@ -141,5 +142,33 @@
             android:layout_marginStart="16dp"
             />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/check_orders_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_above="@+id/admin_logout_btn"
+        android:background="@drawable/buttons"
+        android:text="Check Orders"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
+
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons"
+        android:text="Log Out"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
 
 </RelativeLayout>
