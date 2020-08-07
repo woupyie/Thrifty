@@ -24,7 +24,7 @@ import java.util.HashMap;
 
 public class AdminMaintainProductsActivity extends AppCompatActivity {
 
-    private Button applyChangesButton;
+    private Button applyChangesButton, deleteButton;
     private EditText name, price, description;
     private ImageView imageView;
 
@@ -43,6 +43,7 @@ public class AdminMaintainProductsActivity extends AppCompatActivity {
         productsRef = FirebaseDatabase.getInstance().getReference().child("Products").child(productID);
 
         applyChangesButton = findViewById(R.id.apply_changes_button);
+        deleteButton = findViewById(R.id.delete_product_button);
         name = findViewById(R.id.product_name_maintain);
         price = findViewById(R.id.product_price_maintain);
         description = findViewById(R.id.product_description_maintain);
@@ -59,7 +60,30 @@ public class AdminMaintainProductsActivity extends AppCompatActivity {
             }
         });
 
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteThisProduct();
+            }
+        });
 
+
+    }
+
+    private void deleteThisProduct() {
+
+        productsRef.removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+
+                Intent intent = new Intent(AdminMaintainProductsActivity.this, AdminCategoryActivity.class);
+                startActivity(intent);
+                finish();
+
+                Toast.makeText(AdminMaintainProductsActivity.this, "Product Deleted Successfully", Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
 
     private void applyChanges() {
