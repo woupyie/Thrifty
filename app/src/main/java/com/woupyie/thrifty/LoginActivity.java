@@ -19,6 +19,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.woupyie.thrifty.Admin.AdminCategoryActivity;
 import com.woupyie.thrifty.Model.Users;
 import com.woupyie.thrifty.Prevalent.Prevalent;
 
@@ -29,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText InputPhoneNumber, InputPassword;
     private Button loginButton;
     private  ProgressDialog loadingBar;
-    private TextView AdminLink, NotAdminLink;
+    private TextView AdminLink, NotAdminLink, ForgetPasswordLink;
 
     private  String parentDbName = "Users";
     private com.rey.material.widget.CheckBox checkBoxRememberMe;
@@ -44,6 +45,8 @@ public class LoginActivity extends AppCompatActivity {
         InputPassword = findViewById(R.id.login_password_input);
         AdminLink = findViewById(R.id.admin_panel_link);
         NotAdminLink = findViewById(R.id.not_admin_panel_link);
+        ForgetPasswordLink = findViewById(R.id.forget_password_link);
+
         loadingBar = new ProgressDialog(this);
 
         checkBoxRememberMe = findViewById(R.id.remember_me_chkb);

@@ -1,4 +1,4 @@
-package com.woupyie.thrifty;
+package com.woupyie.thrifty.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.woupyie.thrifty.Model.Cart;
+import com.woupyie.thrifty.R;
 import com.woupyie.thrifty.ViewHolder.CartViewHolder;
 
 public class AdminUserProductsActivity extends AppCompatActivity {

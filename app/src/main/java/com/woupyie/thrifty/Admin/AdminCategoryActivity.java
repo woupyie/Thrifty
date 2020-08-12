@@ -1,4 +1,4 @@
-package com.woupyie.thrifty;
+package com.woupyie.thrifty.Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.woupyie.thrifty.HomeActivity;
+import com.woupyie.thrifty.MainActivity;
+import com.woupyie.thrifty.R;
 
 public class AdminCategoryActivity extends AppCompatActivity {
 
