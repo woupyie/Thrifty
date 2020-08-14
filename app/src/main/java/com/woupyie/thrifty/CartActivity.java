@@ -29,6 +29,8 @@ import com.woupyie.thrifty.Model.Cart;
 import com.woupyie.thrifty.Prevalent.Prevalent;
 import com.woupyie.thrifty.ViewHolder.CartViewHolder;
 
+import java.util.Random;
+
 public class CartActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
@@ -73,8 +75,6 @@ public class CartActivity extends AppCompatActivity {
 
         CheckOrderState();
 
-        textTotalAmount.setText("Total Price: " + String.valueOf(overallPrice));
-
 
         final DatabaseReference  cartListRef = FirebaseDatabase.getInstance().getReference().child("Cart List");
 
@@ -94,8 +94,10 @@ public class CartActivity extends AppCompatActivity {
                 holder.txtProductPrice.setText("Price: Ksh " + model.getPrice());
                 holder.txtProductName.setText(model.getPname());
 
+
                 int oneTypeProductPrice = (Integer.valueOf(model.getPrice())) * (Integer.valueOf(model.getQuantity()));
-                overallPrice = overallPrice + oneTypeProductPrice;
+                overallPrice = overallPrice + oneTypeProductPrice + 100;
+                textTotalAmount.setText("Total Price: " + String.valueOf(overallPrice));
 
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
